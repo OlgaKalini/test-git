@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+
+        }
+
+        .wrapper {
+            background: cornsilk;
+            max-width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+            color: whitesmoke;
+        }
+
+        .wrapper:before {
+            content: 'My name is Olga!';
+        }
+
+        .wrapper:after {
+            content: attr(data-preview-text);
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style-type: none;
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        li:before {
+            content: '';
+            width: 4px;
+            display: block;
+            height: 4px;
+            position: absolute;
+            background: chartreuse;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: khaki;
+        }
+
+        .d-flex {
+            display: flex;
+                    }
+        .d-flex div {
+            flex-wrap: wrap;
+
+
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+
+
+        .d-flex div:nth-child(1) {
+            background: red;
+        }
+
+
+        .d-flex div:nth-child(2) {
+            background: orange;
+        }
+
+        .d-flex div:nth-child(3) {
+            background: yellow;
+        }
+
+        .d-flex div:nth-child(4) {
+            background: green;
+        }
+
+        .d-flex div:nth-child(5) {
+            background: blue;
+        }
+
+
+        .d-flex div:nth-child(6) {
+            background: purple;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper" data-preview-text="My name is Olga">
+    <a href="https://www.figma.com/file/mFqSGeLHGkFYfv08ZAnXJr/Untitled?type=whiteboard&node-id=0-1&t=k4YNKAKQbQ5HpUmx-0"
+       target="_blank">tyfhfhyf</a>
+</div>
+<ul>
+    <li>hdjsbcdhj</li>
+    <li>hdjsbcdhj</li>
+    <li>hdjsbcdhj</li>
+    <li>hdjsbcdhj</li>
+    <li>hdjsbcdhj</li>
+</ul>
+<div class="d-flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+
+</body>
+</html>
